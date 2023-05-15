@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event listner practicee</title>
+  </head>
+  <style>
+    p{
+        background-color: black;
+        color: aqua;
+    }
+    #btn{
+        background-color: aqua;
+         border-radius: 13px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Event Lsitner</h1>
+      <p id="par">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+        tempora animi consectetur rerum quam! Itaque sed cum totam. Reiciendis
+        maxime quod repellendus numquam ut quidem atque, enim maiores voluptates
+        at?
+      </p>
+      <button id="btn" onclick="cake">Show/Hide</button>
+    </div>
+
+    <script>
+      console.log("Hello Ji this is sourabh yadav from this side");
+
+
+    //   let para=document.getElementById('par');
+    //   let show=document.getElementById('btn');
+
+      function cake(){
+        let para=document.addEventListener("par");
+      let show=document.addEventListener("btn");
+
+        if (para.style.display === "none") {
+          para.style.display = "none";
+        } else {
+          para.style.display = "block";
+        }
+      }
+
+      let lala=document.addEventListener('click',alertt)
+
+      function alertt(){
+        alert("This is business")
+      }
+
+       let age=prompt("What is your name");
+       if(age < 18){
+           alert("Your's Welcome")
+           console.log("okchhh done")
+       }
+       else{
+        alert("Thik hy!!!!")
+        console.log("sankhi buddha")
+       }
+
+       let clickkk=document.getElementById("par").addEventListener("par");
+
+function clickkk(){
+    para.style.display='none';
+}
+
+
+    </script>
+  </body>
+</html>

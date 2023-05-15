@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON in Jaascript</title>
+  </head>
+  <body>
+    <div class="container">
+        HEllo ji this is sourabh yadav from this sidee
+    </div>
+
+    <script>
+      console.log("Hanjii");
+
+      let jsonobj={
+        name:"Sourabh",
+        channel: "codewithsourabh",
+        friend:"me",
+        food:"potato"
+      }
+      console.log(jsonobj);
+      let myJsonstr=JSON.stringify(jsonobj);;;;
+      console.log(myJsonstr);
+
+     myJsonstr= myJsonstr.replace('potato','chapati');
+      console.log(myJsonstr);
+
+      newJsonobj=JSON.parse(myJsonstr);
+      console.log(newJsonobj);
+
+
+
+
+
+    </script>
+  </body>
+</html>

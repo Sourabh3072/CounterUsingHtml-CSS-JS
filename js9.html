@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Manipulstionn</title>
+  </head>
+  <body>
+    <div class="wrapper" id="main">
+      <h1>Helloo Ji</h1>
+      <ul id="navv">
+        <li>Home</li>
+        <li>Product</li>
+        <li>About us</li>
+        <li>Services</li>
+        <li>bahr nikal bsdk</li>
+      </ul>
+    </div>
+
+    <div class="container">
+        anothre container
+    </div>
+
+    <script>
+      console.log("Hello ji this is sourabh yadav from this sidee");
+
+      let main = document.getElementById("main");
+      console.log(main);
+
+
+      let navv=document.getElementById('navv>li');
+      console.log(navv);
+
+      let container=document.getElementsByClassName('container');
+      console.log(container);
+
+      let selector=document.querySelector('.container');
+      console.log("Selectore return", selector)
+    </script>
+  </body>
+</html>

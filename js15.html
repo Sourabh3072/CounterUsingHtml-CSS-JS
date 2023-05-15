@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Object</title>
+  </head>
+  <body>
+    <div class="container">Hello ji this is sourabh yadav from this sideee</div>
+     <h1>THe unique number is</h1>
+    <div id="number" ></div>
+
+
+    <script>
+      console.log("Hello ji this is sourabh yadav from this siddeee");
+
+      let m = Math;
+      console.log(m);
+
+      //Printing the math object
+
+      //   E: 2.718281828459045;
+      //   LN2: 0.6931471805599453;
+      //   LN10: 2.302585092994046;
+      //   LOG2E: 1.4426950408889634;
+      //   LOG10E: 0.4342944819032518;
+      //   PI: 3.141592653589793;
+      //   SQRT1_2: 0.7071067811865476;
+      //   SQRT2: 1.4142135623730951;
+
+      //Printing the function math constaints
+      console.log("The value of Math is " + Math.E);
+      console.log("The value of Math is " + Math.LN10);
+      console.log("The value of Math is " + Math.LN2);
+      console.log("The value of Math is " + Math.LOG10E);
+      console.log("The value of Math is " + Math.PI);
+      console.log("The value of Math is " + Math.log10);
+
+      //Functionn
+
+      let a = 69.999;
+      let b = 30.12234;
+
+      //value
+
+      console.log("the value of a and b is ", a, b);
+      //addition
+      console.log("Thw value of a and b is ", a + b);
+
+      //substaction
+
+      console.log("The value of a and b is ", a - b);
+
+      //multiplication
+
+      console.log("The value of a and b is ", a * b);
+
+      //divison
+
+      console.log("The value of a and b is ", a / b);
+
+      console.log("The value of a and b is ", a | b);
+
+      console.log(
+        "The value of a is ",
+        Math.round(a),
+        "the value of a and b is " + Math.round(b)
+      );
+
+      //power
+
+      console.log(" 3 raised to power of 2 is ", Math.pow(3, 2));
+
+      console.log(" 2 raised to power of 12 is ", Math.pow(2, 12));
+
+      console.log(" 1 raised to power of 2 is ", Math.pow(1, 2));
+
+      //SqaureRoot
+
+      console.log(" SqaureRoot of 36 is ", Math.sqrt(36));
+
+      console.log(" SqaureRoot of 64 is ", Math.sqrt(64));
+
+      console.log(" SqaureRoot of 62 is ", Math.sqrt(625));
+
+      //Ceil at flooor
+      console.log(" 5.8 rounded up to nearest interger is  ", Math.ceil(5.8));
+
+      console.log(" 5.8 rounded up to nearest interger is  ", Math.floor(5.8));
+
+      //abs function
+
+      console.log("Absolute value of 5.66 ", Math.abs(5.66));
+
+      console.log("Absolute value of -5.66 ", Math.abs(-5.66));
+
+      //trigonometry function
+      console.log("The value of sin(30) is ", Math.sin(90));
+
+      console.log("The value of cos(30) is ", Math.cos(180));
+
+      console.log("The value of tan(180) is ", Math.tan(180));
+
+      //min and max fumction
+
+      console.log("Minimum value of 4,5,6 is ", Math.min(4, 5, 6));
+
+      console.log("Maxmum value of 4,5,6 is ", Math.max(4, 5, 6));
+
+      console.log("The value of log is ", Math.log(15));
+
+      //Generating a random number
+
+      let r = (0, 100);
+      console.log("The random number is ", Math.random(r));
+
+      //Random number b/w (a,b)=a + (b-a)*math.random()
+      let a1 = 1;
+      let b1 = 100;
+      let unique = a1 + (b1 - a1) * Math.random();
+      console.log("the random number is ", Math.round(unique));
+
+      //Generating the number between 50 and 60
+      let c = 50;
+      let d = 60;
+      let ok = c + (d - c) * Math.random();
+      console.log("the unique number is ", Math.round(ok));
+
+      let numberr=document.addEventListener('click',number);
+      function number(){
+        ok.innerHTML= new numberr();
+        console.log(ok); 
+      }
+    </script>
+  </body>
+</html>

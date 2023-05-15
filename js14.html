@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Function</title>
+  </head>
+  <body>
+    <div class="container">Hello Ji this is sourabh yadav from this sidee</div>
+
+    <div class="timee"></div>
+    <script>
+      console.log("Hello Everyone, I am Sourabh Yadav Here..");
+
+      function geet() {
+        console.log("Good Night..");
+      }
+
+      geet();
+
+      let anna = () => console.log("are you sureee...");
+      anna();
+      //arrow functionn
+      let sum = (a, b) => {
+        return a + b;
+      };
+
+      let summ = (a, b) => a + b;
+      let half = (b) => b / 2;
+
+      let sum2 = (c, d) => {
+        return c - d;
+      };
+
+      let obj = {
+        greeting: "good alll asasds asffasd sourabh",
+        name: ["Sourabh", "Doremon", "sichan", "orio"],
+        speak() {
+          this.name.forEach((student) => {
+            console.log(this.greeting + "Kukdoo Kooo" + student);
+          });
+        },
+      };
+      obj.speak();
+
+      setTimeout(() => {
+        console.log("We are inside timeout..ok");
+      }, 3000);
+
+      let time=new Date();
+      console.log(time);
+
+      setInterval(time,1000)
+    </script>
+  </body>
+</html>

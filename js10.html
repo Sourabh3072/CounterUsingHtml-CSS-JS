@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events & listing</title>
+    <style>
+      .container {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 151, 23);
+      }
+      #btn {
+        height: 41px;
+        padding: 11px;
+        background-color: blanchedalmond;
+        width: 117px;
+      }
+
+      #btnnn {
+        background-color: rgb(13, 209, 209);
+        height: 41px;
+        width: 117px;
+        border-radius: 20px;
+        color: bisque;
+      }
+      #btnnn:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello Ji</h1>
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+        consequatur porro minus quo repudiandae placeat recusandae neque in, ab
+        voluptate dolor sint provident tempore ut obcaecati facere a quidem unde
+        doloremque! Sunt impedit quam qui expedita, eum quis commodi dolorem
+        earum incidunt est tenetur repellat!
+      </p>
+
+      <!-- Browser events:
+      click
+      contextmenu
+      mousehover/mouseout
+      mousedown/mouseup
+      mousemove
+
+      submit
+      focus
+
+      DOMcotentLoaded
+
+      transtionend -->
+    </div>
+    <button id="btn" onclick="togglehide()">Show/hide</button>
+
+    <!-- timee -->
+
+    <button id="btnnn" onclick="date">Check the date lvdee</button>
+
+    <p id="demo"></p>
+    <script>
+      console.log("Helllo ji");
+
+      //show/hide btn
+      function togglehide() {
+        let btn = document.getElementById("btn");
+        let para = document.getElementById("para");
+        if (para.style.display == "none") {
+          para.style.display = "block";
+        } else {
+          para.style.display = "none";
+        }
+      }
+
+      //time
+
+      document.getElementById("btnnn").addEventListener("click", date);
+      function date() {
+        document.getElementById("demo").innerHTML = Date();
+      }
+
+      let lalaa = document.getElementById("para");
+      para.addEventListener("mouseover", function run() {
+        alert("Mouse Insidee");
+      });
+
+      para.addEventListener("mouseout", function run() {
+        console.log("Mouse outsidee");
+      });
+
+      
+    </script>
+  </body>
+</html>

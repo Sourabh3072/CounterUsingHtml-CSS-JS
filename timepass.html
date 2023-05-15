@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("../pexels-shivam-tak-4481330.jpg");
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+
+        }
+      .container {
+        position: relative;
+        left: 217px;
+        top: 59px;
+        border: 1px solid black;
+        height: 50px;
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        box-sizing: border-box;
+        object-fit: cover;
+        /* background-image: url("../"); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="ime">12 jun 2002 01.58pm</div>
+
+    <script>
+      console.log("Hello ji this is sourabh yadv from this side");
+
+      const time = "12jun 2023 12.58pm ";
+      document.getElementById("ime").innerText = time;
+
+      function anna() {
+        let date = new Date();
+        console.log(date);
+        document.getElementById("ime").innerHTML = date;
+      }
+      anna();
+      setInterval(anna, 1000);
+
+
+    </script>
+  </body>
+</html>

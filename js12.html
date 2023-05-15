@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date & Time</title>
+
+    <style>
+      .container {
+        border: 2px solid black;
+        background-color: antiquewhite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border-radius: 15px;
+        width: 280px;
+        height: 209px; */
+        position: absolute;
+        top: 49%;
+    left: 25%;
+      }
+
+      #timee{
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      Current time is :-
+      <p id="timee"> </p>
+    </div>
+
+    <script>
+      console.log("HEllo Ji this is sourabh yadav from this sidee");
+
+      let now = new Date();
+      console.log(now);
+
+      let dt = new Date(5000);
+      console.log(dt);
+
+      // newDate=new Date("2002-06-12");
+      // console.log(newDate);
+
+      //let newDate= new Date(year,month,date,hours,minutes,seconds,milliseconds)
+      newDate = new Date(3020, 4, 12, 5, 45, 12, 12);
+      console.log(newDate);
+
+      let yr = newDate.getFullYear();
+      console.log("The year is ", yr);
+
+      let mt = newDate.getMonth();
+      console.log("The month is ", mt);
+
+      let dy = newDate.getDay();
+      console.log("The date is ", dy);
+
+      let tm = newDate.getTime();
+      console.log("The time is", tm);
+
+      // let sec=newDate.getSecond();
+      // console.log(sec);
+
+      newDate.setDate(1);
+      console.log(newDate);
+
+      //   newDate.set(15);
+      //   console.log(newDate);
+
+      Date.now();
+      console.log(newDate);
+
+      setInterval(UpdateTime, 1000);
+
+      function UpdateTime() {
+        timee.innerHTML = new Date();
+        console.log(timee);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript setTimeout & cleartimeout</title>
+  </head>
+  <body>
+    <div class="container" >Time now is <div id="time"></div></div>
+
+    <script>
+      console.log("Hey !!!!");
+
+      // setTimeout--> allows us to the run this function ones after the interval of time
+
+      //clearTiemout --> allows us to run the function repeatedely after the interval of time
+
+      function geet(name, age) {
+       console.log("😎.Hello everyone ..." + name, age);
+      }
+
+      // timeout = setTimeout(geet, 4000, "Sourabh" + " and the age is 20 yr old");
+      // console.log(timeout);
+
+      //wrong as it is calling this function insidee
+      // setTimeout(geet(),2000)
+
+      // clearTimeout(timeout);
+
+      inervalid=setInterval(geet, 500, "Sourabh"," i am 20 yr old ");
+      clearInterval(inervalid);
+
+
+
+      function display(){
+      let  time=new Date();
+
+        console.log(time);
+        document.getElementById('time').innerHTML= time;
+      }
+
+      setInterval(display, 1000);
+
+
+
+    </script>
+  </body>
+</html>
